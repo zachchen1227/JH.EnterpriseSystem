@@ -73,13 +73,26 @@ namespace JH.EnterpriseSystem.Report.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
-            app.MapControllerRoute("api", "api/{controller}/{action=Index}/{id?}");
-            app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
+
+            // 報表頁面路由：/Report/{factory}/{reportCode}
+            app.MapControllerRoute(
+                name: "report",
+                pattern: "Report/{factory}/{reportCode}",
+                defaults: new { controller = "Report", action = "Index" });
+
+            // API 路由
+            app.MapControllerRoute(
+                name: "api",
+                pattern: "api/{controller}/{action=Index}/{id?}");
+
+            // 預設路由
+            app.MapControllerRoute(
+                name: "default",
+                pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
             app.Run();
         }

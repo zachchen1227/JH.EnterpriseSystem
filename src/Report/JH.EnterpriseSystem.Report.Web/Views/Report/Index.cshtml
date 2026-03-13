@@ -1,0 +1,59 @@
+﻿@{
+    var factory = ViewBag.Factory as string ?? "";
+    var reportCode = ViewBag.ReportCode as string ?? "";
+    var queryDay = ViewBag.QueryDay as string ?? "";
+    ViewData["Title"] = $"{reportCode} - {factory}";
+}
+
+<div class="report-page">
+
+    <!-- ── 標題列 ───────────────────────────────────────── -->
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="mb-0 report-title" id="chartTitle">載入中...</h5>
+
+        <!-- 日期選擇器 -->
+        <div class="d-flex align-items-center gap-2">
+            <label for="queryDayInput" class="form-label mb-0 text-nowrap">查詢日期</label>
+            <input type="date"
+                   id="queryDayInput"
+                   class="form-control form-control-sm"
+                   style="width:150px"
+                   value="@queryDay" />
+            <button class="btn btn-sm btn-primary" id="btnQuery">查詢</button>
+        </div>
+    </div>
+
+    <!-- ── 圖表容器 ──────────────────────────────────────── -->
+    <div class="chart-wrapper">
+        <!-- Loading 遮罩 -->
+        <div class="chart-loading" id="chartLoading">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">載入中...</span>
+            </div>
+        </div>
+
+        <!-- 錯誤訊息 -->
+        <div class="chart-error d-none" id="chartError">
+            <p class="text-danger mb-1" id="chartErrorMsg"></p>
+            <button class="btn btn-sm btn-outline-secondary" id="btnRetry">重新載入</button>
+        </div>
+
+        <!-- Highcharts 掛載點 -->
+        <div id="chartContainer" style="width:100%; height:480px;"></div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <script>
+        // 把後端資料注入 JS（避免 XSS，使用 Json.Serialize）
+        window.__REPORT__ = {
+            factory:    '@Html.Raw(factory)',
+            reportCode: '@Html.Raw(reportCode)',
+            queryDay:   '@Html.Raw(queryDay)'
+        };
+    </script>
+
+    <!-- 圖表渲染邏輯 -->
+    <script src="~/js/charts/combo-chart.js" asp-append-version="true"></script>
+}

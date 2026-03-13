@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JH.EnterpriseSystem.Report.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7eec5c56b16918b8a22b0ee43fd9a4871ea60dfc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2207209b6971f34ce0700aaa6c987a934ccf50d")]
 [assembly: System.Reflection.AssemblyProductAttribute("JH.EnterpriseSystem.Report.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JH.EnterpriseSystem.Report.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

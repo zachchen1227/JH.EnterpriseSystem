@@ -27,7 +27,7 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
             new() { Name="實際產量", DataField="ActualQty",
                     VisualType="column",  YAxis=0, ColorSource="ActualColor" },
             new() { Name="目標產量", DataField="TargetQty",
-                    VisualType="column",  YAxis=0, ColorSource="TargetColor" },
+                    VisualType="scatter",  YAxis=0, ColorSource="TargetColor" },
             new() { Name="達成率",   DataField="Rates",
                     VisualType="scatter", YAxis=1, ColorSource="RateLineColor",
                     ApplyWarningColor=true },
