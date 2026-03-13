@@ -3,80 +3,36 @@
   "WorkspaceRootPath": "C:\\Work\\Projects\\JH.EnterpriseSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB95C1C9-28AC-7DC2-ECCC-8808B057F153}|src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.repository\\fake\\fakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB95C1C9-28AC-7DC2-ECCC-8808B057F153}|src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.repository\\fake\\fakerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\jh.enterprisesystem.report.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\jh.enterprisesystem.report.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\jh.enterprisesystem.report.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\jh.enterprisesystem.report.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\services\\chartproviders\\combochartprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\services\\chartproviders\\combochartprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\services\\chartbuilders\\combochartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\services\\chartbuilders\\combochartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\registry\\reportregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\registry\\reportregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\registry\\chartthemeregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\registry\\chartthemeregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\ichartprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\ichartprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportdatamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\ireportdatamapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\models\\chartdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\models\\chartdefinition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\models\\factorycharttheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\models\\factorycharttheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\services\\chartproviders\\weeklycomboprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\services\\chartproviders\\weeklycomboprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\enums\\reportcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\enums\\reportcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\models\\domain\\weeklyproductiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\models\\domain\\weeklyproductiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA8861FB-D8BA-FE16-83DA-471264F3D100}|src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\JH.EnterpriseSystem.Shared.Kernel.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\shared\\jh.enterprisesystem.shared.kernel\\enums\\appcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8861FB-D8BA-FE16-83DA-471264F3D100}|src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\JH.EnterpriseSystem.Shared.Kernel.csproj|solutionrelative:src\\shared\\jh.enterprisesystem.shared.kernel\\enums\\appcode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\models\\reportmeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\models\\reportmeta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\enums\\factorycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\enums\\factorycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB95C1C9-28AC-7DC2-ECCC-8808B057F153}|src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.repository\\jh.enterprisesystem.report.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CB95C1C9-28AC-7DC2-ECCC-8808B057F153}|src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.repository\\jh.enterprisesystem.report.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\interfaces\\ichartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\interfaces\\ichartbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,253 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ComboChartBuilder.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartBuilders\\ComboChartBuilder.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartBuilders\\ComboChartBuilder.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartBuilders\\ComboChartBuilder.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartBuilders\\ComboChartBuilder.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAwCMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T09:20:53.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-12T09:18:57.065Z",
+              "WhenOpened": "2026-03-13T05:05:23.011Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReportService.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportService.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportService.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportService.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBQAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:54:27.206Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FakeRepository.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T04:14:39.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T04:12:13.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "JH.EnterpriseSystem.Report.Core.csproj",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T09:23:37.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ComboChartProvider.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\ComboChartProvider.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\ComboChartProvider.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\ComboChartProvider.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\ComboChartProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T06:18:45.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "JH.EnterpriseSystem.Report.Web.csproj",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T09:24:16.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IReportService.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAoAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:48:52.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "ReportRegistry.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
               "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
               "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:16:05.284Z",
+              "WhenOpened": "2026-03-13T05:17:10.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IChartProvider.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T06:16:22.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FactoryChartTheme.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\FactoryChartTheme.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\FactoryChartTheme.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\FactoryChartTheme.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\FactoryChartTheme.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:13:27.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ChartDefinition.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwA4AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:05:07.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ChartThemeRegistry.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ChartThemeRegistry.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ChartThemeRegistry.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ChartThemeRegistry.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ChartThemeRegistry.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwB0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:23:34.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ReportCode.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T09:30:17.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AppCode.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\Enums\\AppCode.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\Enums\\AppCode.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\Enums\\AppCode.cs",
-              "RelativeToolTip": "src\\Shared\\JH.EnterpriseSystem.Shared.Kernel\\Enums\\AppCode.cs",
+              "DocumentIndex": 2,
+              "Title": "IReportService.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T04:08:57.285Z",
+              "WhenOpened": "2026-03-13T05:16:28.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ReportMeta.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IReportDataMapper.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvx8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T03:09:20.654Z",
+              "WhenOpened": "2026-03-13T05:12:25.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FactoryCode.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAgAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwBEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T09:29:16.366Z",
+              "WhenOpened": "2026-03-13T05:13:58.694Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "JH.EnterpriseSystem.Report.Repository.csproj",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Repository\\JH.EnterpriseSystem.Report.Repository.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-11T09:23:50.793Z",
+              "DocumentIndex": 5,
+              "Title": "WeeklyComboProvider.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAArwDAAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:11:40.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeeklyProductionData.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\Domain\\WeeklyProductionData.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\Domain\\WeeklyProductionData.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\Domain\\WeeklyProductionData.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\Domain\\WeeklyProductionData.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAwAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:06:34.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IChartBuilder.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartBuilder.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartBuilder.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartBuilder.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartBuilder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T05:06:04.408Z",
               "EditorCaption": ""
             }
           ]

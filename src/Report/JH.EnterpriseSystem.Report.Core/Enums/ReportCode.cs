@@ -1,16 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace JH.EnterpriseSystem.Report.Core.Enums
 {
     public enum ReportCode
     {
-        RPT25001,
-        RPT25002,
-        RPT25100,
+        // 成型
+        RPT25001,   // 成型生產週報表
+        RPT25002,   // 每日成型產量達成狀況表
+
+        // 成型RFT
+        RPT25003,   //成型RFT週報表
+        RPT25004,   //成型RFT日報表
+
+        // 組底 
+        RPT25005,   //組底週報表
+        RPT25006,   //每日組底產量達成狀況表
+
+        // 針車
+        RPT25007,   // 針車週報表
+        RPT25008,   // 每日針車產量達成狀況表
+
+        // 噴漆
+        RPT25009,   // 噴漆週報表
+        RPT25010,   // 每日噴漆產量達成狀況表
+
+        // 印刷_高週波
+        RPT250091,  // 印刷_高週波週報表
+        RPT250101,  // 每日印刷_高週波產量達成狀況表
+
+        // 裁斷
+        RPT25011,   // 裁斷週報表
+        RPT25012,   // 每日裁斷產量達成狀況表
+
+        // 成行配套
+        RPT25013,   // 成行配套週報表
+        RPT25014,   // 當日成型時段產量
+
+        // 生產總表
         RPTALL
     }
 }
