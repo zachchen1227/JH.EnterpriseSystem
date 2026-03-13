@@ -8,7 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Interfaces\" />
-    <Folder Include="Fake\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JH.EnterpriseSystem.Report.Core\JH.EnterpriseSystem.Report.Core.csproj" />
   </ItemGroup>
 
 </Project>

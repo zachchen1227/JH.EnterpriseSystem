@@ -13,4 +13,10 @@
     <Folder Include="wwwroot\js\charts\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared\JH.EnterpriseSystem.Shared.Kernel\JH.EnterpriseSystem.Shared.Kernel.csproj" />
+    <ProjectReference Include="..\JH.EnterpriseSystem.Report.Core\JH.EnterpriseSystem.Report.Core.csproj" />
+    <ProjectReference Include="..\JH.EnterpriseSystem.Report.Repository\JH.EnterpriseSystem.Report.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

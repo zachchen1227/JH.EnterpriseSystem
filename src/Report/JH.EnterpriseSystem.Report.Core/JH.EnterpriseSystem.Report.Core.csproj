@@ -7,11 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Models\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
-    <Folder Include="Registry\" />
+    <ProjectReference Include="..\..\Shared\JH.EnterpriseSystem.Shared.Kernel\JH.EnterpriseSystem.Shared.Kernel.csproj" />
   </ItemGroup>
 
 </Project>
