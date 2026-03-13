@@ -7,27 +7,33 @@ using System.Threading.Tasks;
 namespace JH.EnterpriseSystem.Report.Core.Models.Domain
 {
     /// <summary>
-    /// 週報 Domain Model。
-    /// X 軸 = 日期，呈現一週趨勢。
-    /// 對應舊系統 ToShow1/5/7/9/11/14 的資料結構。
+    /// 週報通用 Domain Model。
+    ///
+    /// Series 改為字典，有幾條就放幾條，Builder 找不到自動跳過。
+    ///
+    /// 範例（成型週報四條）：
+    ///   Series["ActualQty"]       = List&lt;int&gt;    [91000, 89000, ...]
+    ///   Series["TargetQty"]       = List&lt;int&gt;    [95000, 92000, ...]
+    ///   Series["DailyRate"]       = List&lt;double&gt; [95.8,  96.7,  ...]
+    ///   Series["AccumulatedRate"] = List&lt;double&gt; [95.1,  95.3,  ...]
+    ///
+    /// 範例（只有兩條折線的週報）：
+    ///   Series["LineA"] = List&lt;double&gt; [...]
+    ///   Series["LineB"] = List&lt;double&gt; [...]
     /// </summary>
     public class WeeklyProductionData
     {
         /// <summary>X 軸日期標籤，例如 ["03/06","03/07",...]</summary>
         public List<string> Dates { get; set; } = [];
 
-        /// <summary>每日目標產量（對應舊系統 DispatchCount）</summary>
-        public List<int> TargetQty { get; set; } = [];
+        /// <summary>
+        /// 各 Series 資料。
+        /// Key   = SeriesDefinition.DataField
+        /// Value = List&lt;int&gt; 或 List&lt;double&gt;
+        /// </summary>
+        public Dictionary<string, object> Series { get; set; } = [];
 
-        /// <summary>每日實際產量（對應舊系統 TotalCount）</summary>
-        public List<int> ActualQty { get; set; } = [];
-
-        /// <summary>每日達成率（%），例如 95.3</summary>
-        public List<double> DailyRate { get; set; } = [];
-
-        /// <summary>累計達成率（%）（對應舊系統 Mavg）</summary>
-        public List<double> AccumulatedRate { get; set; } = [];
-
-        public bool HasAccumulatedRate => AccumulatedRate.Count > 0;
+        public void AddSeries(string key, List<int> data) => Series[key] = data;
+        public void AddSeries(string key, List<double> data) => Series[key] = data;
     }
 }

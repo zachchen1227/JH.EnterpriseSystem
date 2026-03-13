@@ -2,18 +2,17 @@
 using JH.EnterpriseSystem.Report.Core.Interfaces;
 using JH.EnterpriseSystem.Report.Core.Models.ExtraParams;
 using JH.EnterpriseSystem.Report.Core.Registry;
-using static System.Net.WebRequestMethods;
 
 namespace JH.EnterpriseSystem.Report.Core.Services.ChartProviders
 {
-    public class WeeklyComboProvider : IChartProvider
+    public class DailyComboProvider : IChartProvider
     {
         private readonly IRepository _repo;
         private readonly IReportDataMapper _mapper;
         private readonly IChartBuilder _builder;
-        public string ChartType => "weekly-combo";
+        public string ChartType => "daily-combo";
 
-        public WeeklyComboProvider(
+        public DailyComboProvider(
             IRepository repo, IReportDataMapper mapper, IChartBuilder builder)
         { _repo = repo; _mapper = mapper; _builder = builder; }
 
@@ -21,17 +20,13 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartProviders
                   string factory, string reportCode, string title,
                   string queryDay, object? extraParams = null)
         {
-            var extra = extraParams as WeeklyExtraParams ?? new WeeklyExtraParams();
+            var extra = extraParams as DailyExtraParams ?? new DailyExtraParams();
             var theme = ChartThemeRegistry.Get(Enum.Parse<FactoryCode>(factory, true));
 
-            var eDay = DateTime.TryParse(queryDay, out var d) ? d : DateTime.Today.AddDays(-1);
-            var sDay = eDay.AddDays(-(extra.Days - 1));
+            var raw = await _repo.GetDailyRawDataAsync(factory, reportCode, queryDay);
+            var data = _mapper.MapDailyTeamProduction(raw, extra);
 
-            var raw = await _repo.GetWeeklyRawDataAsync(factory, reportCode,
-                           sDay.ToString("yyyy/MM/dd"), eDay.ToString("yyyy/MM/dd"));
-            var data = _mapper.MapWeeklyProduction(raw, extra);
-
-            return _builder.BuildWeekly(data, theme, title, reportCode, extra.SeriesConfig);
+            return _builder.BuildDaily(data, theme, title, reportCode, extra.SeriesConfig);
         }
     }
 }

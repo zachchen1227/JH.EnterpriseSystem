@@ -5,93 +5,76 @@ namespace JH.EnterpriseSystem.Report.Repository.Fake
 {
     public class FakeRepository : IRepository
     {
-        private readonly Random _rng = new Random();
+        private readonly Random _rng = new();
 
-        /// <summary>
-        /// 模擬 週報表 資料
-        /// </summary>
-        public async Task<DataTable> GetCommonReportDataAsync(string reportCode, string sDay, string eDay)
+        public async Task<DataTable> GetWeeklyRawDataAsync(
+            string factory, string reportCode, string sDay, string eDay)
         {
-            await Task.Delay(100); // 模擬連線延遲
+            await Task.Delay(80);
+            var dt = new DataTable();
+            dt.Columns.Add("StockFlowDate", typeof(DateTime));
+            dt.Columns.Add("DispatchCount", typeof(int));
+            dt.Columns.Add("TotalCount", typeof(int));
+            dt.Columns.Add("Mavg", typeof(double));
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("StockFlowDate", typeof(DateTime)); // X軸: 日期
-            dt.Columns.Add("ActualQty", typeof(int));          // 實際產量 (長條圖)
-            dt.Columns.Add("TargetQty", typeof(int));          // 目標產量 (點狀圖)
-            dt.Columns.Add("Rate", typeof(double));            // 當日達成率 (線圖/點圖)
-            dt.Columns.Add("AccumulatedRate", typeof(double)); // 累計達成率 (虛線)
+            if (!DateTime.TryParse(sDay, out var start)) start = DateTime.Today.AddDays(-6);
+            if (!DateTime.TryParse(eDay, out var end)) end = DateTime.Today;
 
-            // 解析傳入的日期區間
-            if (!DateTime.TryParse(sDay, out DateTime start)) start = DateTime.Today.AddDays(-6);
-            if (!DateTime.TryParse(eDay, out DateTime end)) end = DateTime.Today;
-
-            double totalActual = 0;
-            double totalTarget = 0;
-
-            // 逐日產生假資料
-            for (DateTime date = start; date <= end; date = date.AddDays(1))
+            double totalActual = 0, totalTarget = 0;
+            for (var date = start; date <= end; date = date.AddDays(1))
             {
-                // 模擬每日目標約 8萬 ~ 11萬
-                int target = _rng.Next(80000, 110000);
-
-                // 模擬達成率在 85% ~ 105% 之間震盪
-                int actual = (int)(target * (_rng.NextDouble() * 0.2 + 0.85));
-
-                // 累加總量 (用於計算累計達成率)
-                totalActual += actual;
-                totalTarget += target;
-
-                dt.Rows.Add(
-                    date,
-                    actual,
-                    target,
-                    Math.Round((double)actual / target * 100, 1),       // 當日達成率
-                    Math.Round(totalActual / totalTarget * 100, 1)      // 累計達成率
-                );
+                int dispatch = _rng.Next(80_000, 110_000);
+                int total = (int)(dispatch * (_rng.NextDouble() * 0.20 + 0.85));
+                totalActual += total; totalTarget += dispatch;
+                dt.Rows.Add(date, dispatch, total,
+                    Math.Round(totalActual / totalTarget * 100, 1));
             }
-
             return dt;
         }
 
-        /// <summary>
-        /// 模擬 日報表 資料
-        /// </summary>
-        public async Task<DataTable> GetDailyReportDataAsync(string reportCode, string queryDay)
+        public async Task<DataTable> GetDailyRawDataAsync(
+            string factory, string reportCode, string queryDay)
         {
-            await Task.Delay(100);
+            await Task.Delay(80);
+            var dt = new DataTable();
+            dt.Columns.Add("WorkTeamName", typeof(string));
+            dt.Columns.Add("DataType", typeof(string));
+            dt.Columns.Add("TotalCount", typeof(int));
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("WorkTeamName", typeof(string)); // X軸: 組別
-            dt.Columns.Add("ActualQty", typeof(int));       // 實際產量
-            dt.Columns.Add("TargetQty", typeof(int));       // 目標產量
-            dt.Columns.Add("Rate", typeof(double));         // 達成率
+            string[] teams =
+            [
+                "AS-B03","AS-B05","AS-B07","AS-B09","AS-B11","AS-B13",
+                "AS-D01","AS-D03","AS-D05","AS-D07",
+                "AS-MP01","AS-MP03","AS-MP05","AS-MP07","AS-MP09",
+                "BU1P3","PACKING 1",
+                "SNK AS-B01","SNK AS-E01","SNK AS-E03","SNK AS-E05"
+            ];
 
-            // 模擬截圖中的 25 個組別
-            string[] teams = {
-                "AS-B03", "AS-B05", "AS-B07", "AS-B09", "AS-B11", "AS-B13", "AS-D01", "AS-D03",
-                "AS-D05", "AS-D07", "AS-MP01", "AS-MP03", "AS-MP05", "AS-MP07", "AS-MP09",
-                "AS-MP11", "AS-MP13", "BU1P3", "PACKING 1", "SNK AS-B01", "SNK AS-E01",
-                "SNK AS-E03", "SNK AS-E05", "SNK AS-E07", "SNK AS-E11"
+            var (tType, aType) = reportCode switch
+            {
+                "RPT25002" => ("1271", "1273"),
+                "RPT25006" => ("1292", "1209A"),
+                "RPT25008" => ("1261", "1209A"),
+                "RPT25010" => ("1281", "1209A"),
+                "RPT25012" => ("1251", "1209A"),
+                _ => ("1271", "1273")
             };
 
             foreach (var team in teams)
             {
-                // 模擬各組目標產量較小，約 1000 ~ 3500
-                int target = _rng.Next(1000, 3500);
-
-                // 模擬：有 20% 的機率達成率會低於 90% (觸發前端變紅色邏輯)
-                double rateMultiplier = _rng.NextDouble() > 0.8 ? 0.82 : (_rng.NextDouble() * 0.15 + 0.95);
-                int actual = (int)(target * rateMultiplier);
-
-                dt.Rows.Add(
-                    team,
-                    actual,
-                    target,
-                    Math.Round((double)actual / target * 100, 1)
-                );
+                int dispatch = _rng.Next(1_000, 3_500);
+                int actual = (int)(dispatch * (_rng.NextDouble() * 0.25 + 0.80));
+                dt.Rows.Add(team, tType, dispatch);
+                dt.Rows.Add(team, aType, actual);
             }
-
             return dt;
+        }
+
+      
+        public async Task<List<DateTime>> GetHolidaysAsync(string sDay, string eDay)
+        {
+            await Task.Delay(10);
+            return [];
         }
     }
 }

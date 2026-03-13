@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Api\" />
     <Folder Include="Settings\" />
     <Folder Include="ViewModels\" />
     <Folder Include="wwwroot\js\charts\" />

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hbrE2CgvoYY=",
+  "dgSpecHash": "6V0fAck6SkE=",
   "success": true,
   "projectFilePath": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ChenTaYu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\ChenTaYu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\ChenTaYu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.5\\system.diagnostics.diagnosticsource.10.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

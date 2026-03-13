@@ -9,9 +9,6 @@ namespace JH.EnterpriseSystem.Report.Core.Interfaces
     public interface IReportService
     {
         Task<object> GetChartDataAsync(
-            string factory,
-            string reportCode,
-            string chartPath,
-            string queryDay);
+            string factory, string reportCode, string queryDay);
     }
 }
