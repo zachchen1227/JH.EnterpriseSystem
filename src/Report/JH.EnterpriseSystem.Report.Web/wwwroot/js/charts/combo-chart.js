@@ -43,16 +43,7 @@
         }
     }
 
-    // ════════════════════════════════════════════════════════
-    //  Highcharts 全域設定（全螢幕中文）
-    // ════════════════════════════════════════════════════════
-    Highcharts.setOptions({
-        lang: {
-            viewFullscreen: '全螢幕檢視圖表',
-            contextButtonTitle: '工具選單',
-            exitFullscreen: '離開全螢幕',
-        }
-    });
+ 
 
     // ════════════════════════════════════════════════════════
     //  Highcharts 渲染
@@ -61,12 +52,36 @@
         const cfg = payload.config;
         const data = payload.data;
 
+
+
+
+        // ════════════════════════════════════════════════════════
+        //  Highcharts 全域設定（全螢幕中文）
+        // ════════════════════════════════════════════════════════
+        Highcharts.setOptions({
+            lang: {
+                viewFullscreen: '全螢幕檢視圖表',
+                contextButtonTitle: '工具選單',
+                exitFullscreen: '離開全螢幕',
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
         elTitle.textContent = cfg.title ?? reportCode;
         if (currentChart) { currentChart.destroy(); currentChart = null; }
         Highcharts.setOptions({ colors: cfg.colors ?? [] });
 
         const yAxes = buildYAxes(cfg.yAxes, data);
-        const series = buildSeries(cfg, data);
+        const series = buildSeries(cfg, data); console.log('series', series);
         const xAxis = buildXAxis(cfg.xAxis, data.categories);
         const tooltip = buildTooltip(cfg);
         const legend = buildLegend(cfg.legend);
