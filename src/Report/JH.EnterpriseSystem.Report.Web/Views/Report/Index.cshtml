@@ -1,62 +1,103 @@
 ﻿@{
-    var factory = ViewBag.Factory as string ?? "";
-    var reportCode = ViewBag.ReportCode as string ?? "";
-    var queryDay = ViewBag.QueryDay as string ?? "";
+    ViewData["Title"] = $"{ViewBag.Factory} - {ViewBag.ReportCode} 報表";
 
-    // input[type=date] 需要 yyyy-MM-dd 格式（斜線→連字號）
-    var queryDayForInput = queryDay.Replace('/', '-');
-
-    ViewData["Title"] = $"{reportCode} - {factory}";
+    // 從 Controller 傳來的參數
+    string factory = ViewBag.Factory;       // e.g. "BU1"
+    string reportCode = ViewBag.ReportCode; // e.g. "RPT25001"
+    string queryDay = ViewBag.QueryDay;     // e.g. "2025/10/20"
 }
 
-<div class="report-page">
+<!-- 引用我們重構的 JS -->
+<script src="~/js/report/report.config.js"></script>
+<script src="~/js/report/report.core.js"></script>
+<script src="~/js/report/report.charts.js"></script>
 
-    <!-- ── 標題列 ───────────────────────────────────────── -->
-    <div class="d-flex align-items-center justify-content-between mb-3">
-        <h5 class="mb-0 report-title" id="chartTitle">載入中...</h5>
-
-        <!-- 日期選擇器 -->
-        <div class="d-flex align-items-center gap-2">
-            <label for="queryDayInput" class="form-label mb-0 text-nowrap">查詢日期</label>
-            <input type="date"
-                   id="queryDayInput"
-                   class="form-control form-control-sm"
-                   value="@queryDayForInput" />
-            <button class="btn btn-sm btn-primary" id="btnQuery">查詢</button>
+<div class="container-fluid mt-3">
+    <!-- 標題與查詢列 -->
+    <div class="row mb-3 align-items-center">
+        <div class="col-md-6">
+            <h3>@factory - @reportCode 報表</h3>
         </div>
-    </div>
-
-    <!-- ── 圖表容器 ──────────────────────────────────────── -->
-    <div class="chart-wrapper">
-        <!-- Loading 遮罩 -->
-        <div class="chart-loading" id="chartLoading">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">載入中...</span>
+        <div class="col-md-6 text-end">
+            <div class="input-group justify-content-end">
+                <span class="input-group-text">日期</span>
+                <input type="date" id="queryDate" class="form-control" style="max-width: 200px;"
+                       value="@DateTime.Parse(queryDay).ToString("yyyy-MM-dd")">
+                <button class="btn btn-primary" onclick="reloadData()">查詢</button>
             </div>
         </div>
-
-        <!-- 錯誤訊息 -->
-        <div class="chart-error d-none" id="chartError">
-            <p class="text-danger mb-1" id="chartErrorMsg"></p>
-            <button class="btn btn-sm btn-outline-secondary" id="btnRetry">重新載入</button>
-        </div>
-
-        <!-- Highcharts 掛載點（高度由 CSS 控制）-->
-        <div id="chartContainer"></div>
     </div>
 
+    <!-- 圖表容器 -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div id="chartContainer" style="height: 600px; width: 100%;"></div>
+        </div>
+    </div>
 </div>
 
-@section Scripts {
-    <script>
-        // ★ 修正：用 Json.Serialize 取代 Html.Raw，避免 XSS
-        window.__REPORT__ = {
-            factory:    @Json.Serialize(factory),
-            reportCode: @Json.Serialize(reportCode),
-            queryDay:   @Json.Serialize(queryDay)
-        };
-    </script>
+<script>
+    // 1. 初始化圖表管理器
+    const chartManager = new ReportChartManager('chartContainer', '@factory');
 
-    <!-- 圖表渲染邏輯 -->
-    <script src="~/js/charts/combo-chart.js" asp-append-version="true"></script>
-}
+    // 2. 載入資料函式 (改用 async/await)
+    async function reloadData() {
+        // 取得使用者選擇的日期
+        const dateInput = document.getElementById('queryDate').value;
+        // 轉換格式 yyyy-MM-dd -> yyyy/MM/dd
+        const formattedDate = dateInput.replace(/-/g, '/');
+
+        // 顯示 Loading
+        if (chartManager.chartInstance) {
+            chartManager.chartInstance.showLoading('讀取中...');
+        }
+
+        try {
+            const apiResponse = await ReportService.getChartData('@factory', '@reportCode', formattedDate);
+
+            console.log("Data loaded:", apiResponse);
+
+            // 隱藏 Loading
+            if (chartManager.chartInstance) chartManager.chartInstance.hideLoading();
+
+            // 繪製圖表
+            renderChartByCode('@reportCode', apiResponse);
+
+        } catch (error) {
+            // 錯誤處理
+            console.error(error);
+            if (chartManager.chartInstance) chartManager.chartInstance.hideLoading();
+            alert("讀取資料失敗：" + error.message);
+        }
+    }
+
+    // 3. 根據報表代碼分派繪圖邏輯
+    function renderChartByCode(code, apiResponse) {
+
+        const data = apiResponse.data;  
+        const meta = apiResponse.meta; 
+ 
+        if (!data || !data.categories) {
+             console.warn("回傳資料為空或格式不正確");
+           
+            return;
+        }
+
+        switch (code.toLowerCase()) {
+            case 'RPT25001':   // 舊系統代號相容
+                chartManager.renderWeeklyProduction(data, data.title);
+                break;
+            case 'rft': // RFT
+                chartManager.renderRFT(data, data.title);
+                break;
+            default:
+                console.warn("未知的報表代碼:", code);
+                break;
+        }
+    }
+
+    // 4. 頁面載入後自動執行
+    document.addEventListener('DOMContentLoaded', function () {
+        reloadData();
+    });
+</script>
