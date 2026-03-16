@@ -74,21 +74,37 @@
     // 3. 根據報表代碼分派繪圖邏輯
     function renderChartByCode(code, apiResponse) {
 
-        const data = apiResponse.data;  
+        const rawData = apiResponse.data;
         const meta = apiResponse.meta; 
  
-        if (!data || !data.categories) {
-             console.warn("回傳資料為空或格式不正確");
-           
+        // 2. 檢查資料有效性
+        if (!rawData || !rawData.categories || rawData.categories.length === 0) {
+            console.warn("回傳資料為空或格式不正確");
+            // 建議：可以在這裡顯示「查無資料」的提示
+            if(chartManager.chartInstance) {
+                chartManager.chartInstance.showLoading('查無資料');
+            }
             return;
         }
 
+        // 3. 【關鍵修正】資料轉接 (Mapping)
+        // 將後端的欄位名稱 (targetQty) 轉成 report.charts.js 認識的名稱 (targets)
+        const chartData = {
+            categories: rawData.categories,
+            targets: rawData.targetQty,     // targetQty -> targets
+            actuals: rawData.actualQty,     // actualQty -> actuals
+            rates: rawData.dailyRate        // dailyRate -> rates (如有需要)
+        };
+
+       // 4. 根據代碼繪圖
         switch (code.toLowerCase()) {
-            case 'RPT25001':   // 舊系統代號相容
-                chartManager.renderWeeklyProduction(data, data.title);
+            case 'production': // 相容新代碼
+            case 'rpt25001':   // 舊系統代號
+                // 傳入 meta.title 作為標題
+                chartManager.renderWeeklyProduction(chartData, meta.title);
                 break;
-            case 'rft': // RFT
-                chartManager.renderRFT(data, data.title);
+            case 'rft':
+                chartManager.renderRFT(chartData, meta.title);
                 break;
             default:
                 console.warn("未知的報表代碼:", code);
