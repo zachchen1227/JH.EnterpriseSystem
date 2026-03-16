@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 
 namespace JH.EnterpriseSystem.Report.Core.Interfaces
 {
-
     public interface IReportDataMapper
     {
         WeeklyProductionData MapWeeklyProduction(DataTable raw, WeeklyExtraParams extra);

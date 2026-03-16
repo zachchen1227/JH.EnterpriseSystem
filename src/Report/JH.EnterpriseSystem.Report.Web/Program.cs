@@ -1,6 +1,5 @@
 using JH.EnterpriseSystem.Report.Core.Interfaces;
 using JH.EnterpriseSystem.Report.Core.Services;
-using JH.EnterpriseSystem.Report.Core.Services.ChartBuilders;
 using JH.EnterpriseSystem.Report.Core.Services.ChartProviders;
 using JH.EnterpriseSystem.Report.Repository.Fake;
 
@@ -31,21 +30,16 @@ namespace JH.EnterpriseSystem.Report.Web
             // Mapper
             builder.Services.AddScoped<IReportDataMapper, ReportDataMapper>();
 
-            // ChartBuilder
-            builder.Services.AddScoped<ComboChartBuilder>();
-
             // ChartProviders
             builder.Services.AddScoped<IChartProvider>(sp =>
-                new WeeklyComboProvider(
-                    sp.GetRequiredService<IRepository>(),
-                    sp.GetRequiredService<IReportDataMapper>(),
-                    sp.GetRequiredService<ComboChartBuilder>()));
+                 new WeeklyComboProvider(
+                     sp.GetRequiredService<IRepository>(),
+                     sp.GetRequiredService<IReportDataMapper>()));
 
             builder.Services.AddScoped<IChartProvider>(sp =>
                 new DailyComboProvider(
                     sp.GetRequiredService<IRepository>(),
-                    sp.GetRequiredService<IReportDataMapper>(),
-                    sp.GetRequiredService<ComboChartBuilder>()));
+                    sp.GetRequiredService<IReportDataMapper>()));
 
             // ReportService
             builder.Services.AddScoped<IReportService, ReportService>();

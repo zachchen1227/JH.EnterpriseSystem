@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JH.EnterpriseSystem.Report.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7019ee5313154256003dca3731b29aba7698ec54")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fed9558f4d7db806aff1fc9932903da5f9421cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("JH.EnterpriseSystem.Report.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JH.EnterpriseSystem.Report.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

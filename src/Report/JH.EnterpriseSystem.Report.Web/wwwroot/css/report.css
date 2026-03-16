@@ -42,8 +42,117 @@
     z-index: 10;
 }
 
-/* ── ★ 新增：Highcharts 掛載點高度 ───────────────────── */
+/* ── Highcharts 掛載點高度 ────────────────────────────── */
 #chartContainer {
     width: 100%;
     height: 480px;
 }
+
+/* ════════════════════════════════════════════════════════
+   報表總覽頁（Home/Index）
+   ════════════════════════════════════════════════════════ */
+.report-home {
+    padding: 1.5rem 1rem;
+}
+
+    .report-home .page-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+        .report-home .page-header h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 0;
+        }
+
+    .report-home .today-badge {
+        font-size: 0.85rem;
+        color: #666;
+        background: #f0f2f5;
+        padding: 4px 10px;
+        border-radius: 20px;
+    }
+
+    /* Tab 列 */
+    .report-home .nav-tabs .nav-link {
+        font-weight: 600;
+        color: #555;
+        border-radius: 6px 6px 0 0;
+        padding: 0.5rem 1.4rem;
+    }
+
+        .report-home .nav-tabs .nav-link.active {
+            color: #3A7BD5;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+    /* 報表卡片 */
+    .report-home .report-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        border: 1px solid #e4e8ef;
+        border-left: 4px solid #3A7BD5;
+        border-radius: 6px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.6rem;
+        transition: box-shadow 0.15s, transform 0.1s;
+    }
+
+        .report-home .report-card:hover {
+            box-shadow: 0 3px 10px rgba(58, 123, 213, 0.15);
+            transform: translateX(2px);
+        }
+
+        /* 週報用藍色邊、日報用橘色邊 */
+        .report-home .report-card.weekly {
+            border-left-color: #3A7BD5;
+        }
+
+        .report-home .report-card.daily {
+            border-left-color: #FF7F0E;
+        }
+
+        .report-home .report-card .report-info .report-name {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .report-home .report-card .report-info .report-code {
+            font-size: 0.75rem;
+            color: #999;
+            margin-left: 0.5rem;
+        }
+
+        .report-home .report-card .report-info .report-type-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 1px 7px;
+            border-radius: 10px;
+            margin-left: 0.5rem;
+            color: #fff;
+        }
+
+        .report-home .report-card .report-info .badge-weekly {
+            background: #3A7BD5;
+        }
+
+        .report-home .report-card .report-info .badge-daily {
+            background: #FF7F0E;
+        }
+
+    /* 分組標題 */
+    .report-home .group-title {
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #888;
+        margin: 1.2rem 0 0.5rem 0.25rem;
+    }

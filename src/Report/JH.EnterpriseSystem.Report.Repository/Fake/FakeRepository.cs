@@ -29,6 +29,7 @@ namespace JH.EnterpriseSystem.Report.Repository.Fake
                 dt.Rows.Add(date, dispatch, total,
                     Math.Round(totalActual / totalTarget * 100, 1));
             }
+            
             return dt;
         }
 

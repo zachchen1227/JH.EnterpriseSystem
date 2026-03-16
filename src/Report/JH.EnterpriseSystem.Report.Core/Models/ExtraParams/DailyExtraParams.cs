@@ -15,7 +15,5 @@ namespace JH.EnterpriseSystem.Report.Core.Models.ExtraParams
         /// <summary>實際產量的 DataType 代碼，例如 "1273"</summary>
         public string ActualDataType { get; init; } = "1273";
 
-        /// <summary>null = 使用 Builder 預設 Series 組合</summary>
-        public List<SeriesDefinition>? SeriesConfig { get; init; } = null;
     }
 }

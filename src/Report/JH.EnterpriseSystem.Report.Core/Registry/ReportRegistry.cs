@@ -33,7 +33,6 @@ namespace JH.EnterpriseSystem.Report.Core.Registry
                     Days             = 6,
                     ColumnMappings   = DefaultWeeklyColumns,
                     ComputeDailyRate = true,
-                    // SeriesConfig = null → 使用預設（長條+散點+折線+累計虛線）
                 }
             }],
             [ReportCode.RPT25002] = [new ChartDefinition

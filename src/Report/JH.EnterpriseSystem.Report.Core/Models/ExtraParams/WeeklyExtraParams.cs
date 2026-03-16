@@ -38,7 +38,5 @@ namespace JH.EnterpriseSystem.Report.Core.Models.ExtraParams
         /// </summary>
         public bool ComputeDailyRate { get; init; } = true;
 
-        /// <summary>null = 使用 Builder 預設 Series 組合</summary>
-        public List<SeriesDefinition>? SeriesConfig { get; init; } = null;
     }
 }

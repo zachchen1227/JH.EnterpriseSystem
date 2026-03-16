@@ -14,4 +14,8 @@
     <ProjectReference Include="..\..\Shared\JH.EnterpriseSystem.Shared.Kernel\JH.EnterpriseSystem.Shared.Kernel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\ChartBuilders\" />
+  </ItemGroup>
+
 </Project>

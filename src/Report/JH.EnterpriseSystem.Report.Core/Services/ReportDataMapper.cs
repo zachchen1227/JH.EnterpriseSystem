@@ -44,7 +44,7 @@ namespace JH.EnterpriseSystem.Report.Core.Services
                 var dateStr = row[extra.DateColumn]?.ToString() ?? "";
                 result.Dates.Add(
                     DateTime.TryParse(dateStr, out var dt)
-                        ? dt.ToString("MM/dd") : dateStr);
+                        ? dt.ToString("yyyy/MM/dd") : dateStr);
 
                 // 依 ColumnMappings 填入各 Series
                 foreach (var (seriesKey, dbCol) in extra.ColumnMappings)
