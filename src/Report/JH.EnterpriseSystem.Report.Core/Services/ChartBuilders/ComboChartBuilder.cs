@@ -42,7 +42,7 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
             List<SeriesDefinition>? seriesConfig = null)
         {
             var series = Build(seriesConfig ?? DefaultWeekly, data.Series, theme);
-            return Payload(data.Dates, series, theme, title, reportCode, false);
+            return Payload(data.Dates, series, theme, title, reportCode, isDaily: false);
         }
 
         // ════════════════════════════════════════════════════════
@@ -54,7 +54,7 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
             List<SeriesDefinition>? seriesConfig = null)
         {
             var series = Build(seriesConfig ?? DefaultDaily, data.Series, theme);
-            return Payload(data.Teams, series, theme, title, reportCode, true);
+            return Payload(data.Teams, series, theme, title, reportCode, isDaily: true);
         }
 
         // ── 核心：依 SeriesDefinition + 通用字典組裝 ──────────
@@ -66,10 +66,7 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
             var result = new List<object>();
             foreach (var def in config)
             {
-                // DataField 找不到 → 此報表沒有這條線，跳過
                 if (!dataMap.TryGetValue(def.DataField, out var raw)) continue;
-
-                // 空 List 跳過
                 if (raw is List<double> dl && dl.Count == 0) continue;
                 if (raw is List<int> il && il.Count == 0) continue;
 
@@ -127,6 +124,9 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
             _ => t.ActualColor
         };
 
+        // ════════════════════════════════════════════════════════
+        //  Payload：組裝完整 config 區塊（含新外觀設定）
+        // ════════════════════════════════════════════════════════
         private static object Payload(
             List<string> categories, List<object> series,
             FactoryChartTheme theme, string title,
@@ -142,6 +142,8 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
                     type = isDaily ? "daily-combo" : "weekly-combo",
                     title = $"{title} - {theme.FactoryName}",
                     isDaily,
+
+                    // ── 顏色 ──────────────────────────────────
                     colors = theme.ToColorArray(),
                     seriesColors = new
                     {
@@ -152,16 +154,81 @@ namespace JH.EnterpriseSystem.Report.Core.Services.ChartBuilders
                         warning = theme.RateWarningColor,
                     },
                     rateWarningThreshold = theme.RateWarningThreshold,
+
+                    // ── Y 軸範圍設定 ──────────────────────────
                     yAxes = new object[]
                     {
-                        new { title = new { text = "實際/目標產量" }, opposite = false,
-                              magnification = theme.YLeftMagnification,
-                              maxOverride   = yLeftMax },
-                        new { title = new { text = "達成率" }, opposite = true,
-                              ceiling = theme.YRightCeiling,
-                              floor   = theme.YRightFloor,
-                              gap     = theme.YRightGap }
-                    }
+                        new
+                        {
+                            title        = new { text = theme.YAxisTitleLeftText },
+                            titleHtml    = theme.BuildYAxisTitleHtml(theme.YAxisTitleLeftText),
+                            opposite     = false,
+                            magnification  = theme.YLeftMagnification,
+                            maxOverride    = yLeftMax,
+                            labelColor   = theme.YLeftLabelColor,
+                            titleOffsetX = 25,
+                        },
+                        new
+                        {
+                            title       = new { text = theme.YAxisTitleRightText },
+                            titleHtml   = theme.BuildYAxisTitleHtml(theme.YAxisTitleRightText),
+                            opposite    = true,
+                            ceiling     = theme.YRightCeiling,
+                            floor       = theme.YRightFloor,
+                            gap         = theme.YRightGap,
+                            // 刻度顏色與格式
+                            labelColor  = theme.YRightLabelColor,
+                            labelFormat = theme.YRightLabelFormat,
+                            labelOffsetX = theme.YRightLabelOffsetX,
+                            // 標題 x 偏移（對應舊系統 x:-2）
+                            titleOffsetX = -2,
+                        }
+                    },
+
+                    // ── X 軸外觀 ──────────────────────────────
+                    xAxis = new
+                    {
+                        fontSize = isDaily ? theme.XAxisDailyFontSize : theme.XAxisWeeklyFontSize,
+                        fontBold = theme.XAxisLabelBold,
+                        labelRotation = isDaily ? theme.XAxisDailyLabelRotation : 0,
+                    },
+
+                    // ── Legend 外觀 ───────────────────────────
+                    legend = new
+                    {
+                        verticalAlign = theme.LegendVerticalAlign,
+                        fontSize = theme.LegendFontSize,
+                        symbolSquare = theme.LegendSymbolSquare,
+                        symbolWidth = theme.LegendSymbolWidth,
+                        backgroundColor = theme.LegendBackgroundColor,
+                    },
+
+                    // ── Tooltip 外觀 ──────────────────────────
+                    tooltip = new
+                    {
+                        transparent = theme.TooltipTransparent,
+                        followPointer = theme.TooltipFollowPointer,
+                        qtyUnit = theme.TooltipQtyUnit,
+                    },
+
+                    // ── DataLabel 外觀 ────────────────────────
+                    dataLabel = new
+                    {
+                        columnInside = theme.ColumnDataLabelInside,
+                        columnVerticalAlign = theme.ColumnDataLabelVerticalAlign,
+                        noTextOutline = theme.DataLabelNoTextOutline,
+                    },
+
+                    // ── PlotOptions 行為 ──────────────────────
+                    plotOptions = new
+                    {
+                        disableInactiveState = theme.DisableInactiveState,
+                        enableZooming = theme.EnableZooming,
+                        enableOverlapFix = theme.EnableDataLabelOverlapFix,
+                    },
+
+                    // ── 功能開關 ──────────────────────────────
+                    enableExporting = theme.EnableExporting,
                 },
                 data = new { categories, series }
             };
