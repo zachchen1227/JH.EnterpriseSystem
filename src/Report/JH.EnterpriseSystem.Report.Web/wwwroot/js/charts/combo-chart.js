@@ -36,7 +36,7 @@
                 const body = await res.json().catch(() => ({}));
                 throw new Error(body.error ?? `HTTP ${res.status}`);
             }
-            const payload = await res.json();
+            const payload = await res.json();          
             renderChart(payload);
         } catch (err) {
             showError(err.message);
@@ -71,7 +71,7 @@
         Highcharts.setOptions({ colors: cfg.colors ?? [] });
 
         // ── Y 軸 ──────────────────────────────────────────
-        const yAxes = buildYAxes(cfg.yAxes, data);
+        const yAxes = buildYAxes(cfg.yAxes, data); 
 
         // ── Series ────────────────────────────────────────
         const series = buildSeries(cfg, data);
@@ -253,10 +253,8 @@
         return {
             shared: true,
             useHTML: true,
-            // ★ 舊系統：透明背景
             backgroundColor: ttCfg.transparent ? 'transparent' : undefined,
             padding: ttCfg.transparent ? 0 : undefined,
-            // ★ 舊系統：followPointer
             followPointer: ttCfg.followPointer ?? true,
             formatter: function () {
                 let html = `<div class="tev">`;
@@ -264,12 +262,16 @@
                 this.points.forEach(pt => {
                     const isRate = pt.series.yAxis.options.opposite;
                     const color = pt.point.color ?? pt.series.color;
-                    // ★ 舊系統：數字用 ■◆● + 單位
-                    const symbol = pt.series.type === 'column' ? '■' :
-                        pt.series.type === 'scatter' ? '◆' : '●';
+
+                    // ★ 修正：用 options.type 取代 series.type（Highcharts v10+ 相容）
+                    const seriesType = pt.series.options?.type ?? pt.series.type ?? '';
+                    const symbol = seriesType === 'column' ? '■' :
+                        seriesType === 'scatter' ? '◆' : '●';
+
                     const val = isRate
                         ? `<b>${pt.y}%</b>`
                         : `<b>${Number(pt.y).toLocaleString()} ${qtyUnit}</b>`;
+
                     html += `<span style="color:${color}">${symbol}</span> ` +
                         `${pt.series.name}：` +
                         `<span style="color:${isRate && pt.y < threshold ? warning : color}">${val}</span><br/>`;
@@ -279,7 +281,6 @@
             }
         };
     }
-
     // ════════════════════════════════════════════════════════
     //  PlotOptions 建構
     // ════════════════════════════════════════════════════════
@@ -293,8 +294,8 @@
                 borderWidth: 0,
                 dataLabels: {
                     enabled: true,
-                    inside: dlCfg.columnInside ?? true,   // ★ 舊系統：inside
-                    verticalAlign: dlCfg.columnVerticalAlign ?? 'bottom', // ★ 舊系統：bottom
+                    inside: dlCfg.columnInside ?? true,
+                    verticalAlign: dlCfg.columnVerticalAlign ?? 'bottom',
                     allowOverlap: true,
                     crop: false,
                     overflow: 'none',
@@ -304,7 +305,7 @@
                         return `<span>${Number(this.y).toLocaleString()}</span>`;
                     },
                     style: {
-                        textOutline: dlCfg.noTextOutline ? 'none' : undefined, // ★ 舊系統：PDF無描邊
+                        textOutline: dlCfg.noTextOutline ? 'none' : undefined,
                     }
                 }
             },
@@ -315,27 +316,17 @@
                     lineWidth: 1,
                     lineColor: '#333'
                 },
+                // ★ 修正：scatter 的 dataLabels 預設關閉
+                //   yAxis=1 的達成率 scatter 會在 buildSeries 裡自己開啟
+                //   yAxis=0 的目標產量 scatter 不需要 dataLabels
                 dataLabels: {
-                    enabled: true,
-                    allowOverlap: true,
-                    crop: false,
-                    overflow: 'none',
-                    useHTML: true,
-                    inside: true,
-                    formatter: function () {
-                        if (!this.y) return '';
-                        return `<span>${Number(this.y).toLocaleString()}</span>`;
-                    },
-                    style: {
-                        textOutline: dlCfg.noTextOutline ? 'none' : undefined,
-                    }
+                    enabled: false
                 }
             },
             line: {
                 lineWidth: 2
             },
             series: {
-                // ★ 舊系統：關閉 hover 淡化其他系列
                 states: poCfg.disableInactiveState
                     ? { inactive: { enabled: false } }
                     : {}
