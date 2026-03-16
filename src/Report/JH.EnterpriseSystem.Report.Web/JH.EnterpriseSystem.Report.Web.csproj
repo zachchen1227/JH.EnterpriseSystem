@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Settings\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="wwwroot\js\charts\" />
   </ItemGroup>
 
   <ItemGroup>

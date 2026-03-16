@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Work\\Projects\\JH.EnterpriseSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\wwwroot\\js\\charts\\combo-chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\wwwroot\\js\\charts\\combo-chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\wwwroot\\css\\report.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\wwwroot\\css\\report.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\services\\chartproviders\\dailycomboprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.core\\enums\\factorycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3216FAB6-4C33-3646-AF75-04654557D335}|src\\Report\\JH.EnterpriseSystem.Report.Core\\JH.EnterpriseSystem.Report.Core.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.core\\enums\\factorycode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\views\\report\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|c:\\work\\projects\\jh.enterprisesystem\\src\\report\\jh.enterprisesystem.report.web\\wwwroot\\css\\report.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5B1581FB-30DA-61FE-9E60-B3A0B4032DDB}|src\\Report\\JH.EnterpriseSystem.Report.Web\\JH.EnterpriseSystem.Report.Web.csproj|solutionrelative:src\\report\\jh.enterprisesystem.report.web\\wwwroot\\css\\report.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,50 +86,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReportRegistry.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwCkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T07:39:37.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DailyComboProvider.cs",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T07:36:27.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "combo-chart.js",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\charts\\combo-chart.js",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\charts\\combo-chart.js",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\charts\\combo-chart.js",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\charts\\combo-chart.js",
-              "ViewState": "AgIAADsBAAAAAAAAAAAQwFQBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-03-16T06:52:23.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DailyExtraParams.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ExtraParams\\DailyExtraParams.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ExtraParams\\DailyExtraParams.cs",
@@ -146,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "WeeklyExtraParams.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ExtraParams\\WeeklyExtraParams.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ExtraParams\\WeeklyExtraParams.cs",
@@ -159,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "WeeklyComboProvider.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\WeeklyComboProvider.cs",
@@ -172,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Program.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Program.cs",
@@ -185,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IChartProvider.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IChartProvider.cs",
@@ -198,7 +155,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "report.css",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAwJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-16T06:53:21.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportRegistry.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Registry\\ReportRegistry.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwCkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T07:39:37.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-16T06:53:40.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DailyComboProvider.cs",
+              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
+              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
+              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
+              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ChartProviders\\DailyComboProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T07:36:27.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ChartDefinition.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ChartDefinition.cs",
@@ -211,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "IReportDataMapper.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportDataMapper.cs",
@@ -224,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ReportDataMapper.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportDataMapper.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Services\\ReportDataMapper.cs",
@@ -237,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ReportMeta.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Models\\ReportMeta.cs",
@@ -250,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\js\\site.js",
@@ -263,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "FakeRepository.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Repository\\Fake\\FakeRepository.cs",
@@ -276,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IRepository.cs",
@@ -289,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ReportCode.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\ReportCode.cs",
@@ -302,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IReportService.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Interfaces\\IReportService.cs",
@@ -315,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "FactoryCode.cs",
               "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
               "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Core\\Enums\\FactoryCode.cs",
@@ -324,32 +333,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-16T07:00:59.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\Views\\Report\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-16T06:53:40.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "report.css",
-              "DocumentMoniker": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
-              "RelativeDocumentMoniker": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
-              "ToolTip": "C:\\Work\\Projects\\JH.EnterpriseSystem\\src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
-              "RelativeToolTip": "src\\Report\\JH.EnterpriseSystem.Report.Web\\wwwroot\\css\\report.css",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAiwJ4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-03-16T06:53:21.779Z",
               "EditorCaption": ""
             }
           ]
